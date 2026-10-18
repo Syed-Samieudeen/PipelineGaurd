@@ -1,0 +1,21 @@
+﻿__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.gguf
+id_rsa
+id_ed25519
+
+# Generated run artifacts and operational logs
+runs/
+logs/*.jsonl
+
+# Local Python and test artifacts
+__pycache__/
+.pytest_cache/

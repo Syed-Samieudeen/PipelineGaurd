@@ -1,0 +1,616 @@
+error_text,label,parse_ok,n_missing_expected,max_null_frac,nonnumeric_frac,dup_key_frac,empty_file
+"SchemaMismatchError: missing expected columns ['customer', 'amount']; found columns ['order_id', 'CustomerID', 'price_usd', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 192 non-numeric values (e.g. 'TBD'),type_mismatch,1.0,0.0,0.0,0.17843866171003717,0.0,0.0
+NullExplosionError: column 'customer' is 37% null (limit 20%),null_explosion,1.0,0.0,0.37273991655076494,0.0,0.0,0.0
+ValueError: 33 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.043824701195219126,0.0
+Exception: unexpected error in stage 2,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"Exception: missing expected columns ['order_date']; found columns ['order_id', 'customer', 'amount', 'created_at']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,type_mismatch,1.0,0.0,0.0,0.05341446923597025,0.0,0.0
+Exception: column 'amount' is 50% null (limit 20%),null_explosion,1.0,0.0,0.49959250203748984,0.0,0.0,0.0
+DuplicateKeyError: 40 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.06172839506172839,0.0
+Exception: unexpected error in stage 2,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['order_id']; found columns ['customer', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 13 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.040372670807453416,0.0,0.0
+PipelineError: column 'amount' is 42% null (limit 20%),null_explosion,1.0,0.0,0.41786743515850144,0.0,0.0,0.0
+Exception: 45 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.07258064516129033,0.0
+"Error: Error tokenizing data. C error: Expected 4 fields in line 3, saw 7
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Exception: missing expected columns ['order_id']; found columns ['order_no', 'customer', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+"Error: column 'amount' has 21 non-numeric values (e.g. '1,2')",type_mismatch,1.0,0.0,0.0,0.0860655737704918,0.0,0.0
+NullExplosionError: column 'amount' is 43% null (limit 20%),null_explosion,1.0,0.0,0.4274300932090546,0.0,0.0,0.0
+PipelineError: 13 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.05909090909090909,0.0
+"ParserError: Error tokenizing data. C error: Expected 4 fields in line 90, saw 5
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['order_id']; found columns ['customer', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Exception: unexpected error in stage 2,type_mismatch,1.0,0.0,0.0,0.09425939050318922,0.0,0.0
+NullExplosionError: column 'amount' is 23% null (limit 20%),null_explosion,1.0,0.0,0.2311111111111111,0.0,0.0,0.0
+DuplicateKeyError: 64 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.07683073229291716,0.0
+ValueError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+ValueError: validation failed,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 290 non-numeric values (e.g. 'abc'),type_mismatch,1.0,0.0,0.0,0.24308466051969824,0.0,0.0
+Error: job exited with status 1,null_explosion,1.0,0.0,0.49537037037037035,0.0,0.0,0.0
+DuplicateKeyError: 96 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.07169529499626587,0.0
+RuntimeError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Exception: pipeline execution aborted,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 13 non-numeric values (e.g. 'abc'),type_mismatch,1.0,0.0,0.0,0.11016949152542373,0.0,0.0
+RuntimeError: column 'customer' is 52% null (limit 20%),null_explosion,1.0,0.0,0.5193661971830986,0.0,0.0,0.0
+DuplicateKeyError: 72 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.07258064516129033,0.0
+Exception: pipeline execution aborted,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,type_mismatch,1.0,0.0,0.0,0.15848214285714285,0.0,0.0
+Exception: unexpected error in stage 2,null_explosion,1.0,0.0,0.5828767123287671,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,duplicate_keys,1.0,0.0,0.0,0.0,0.012096774193548387,0.0
+ValueError: 'utf-8' codec can't decode byte 0xa7 in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Exception: missing expected columns ['order_id']; found columns ['id', 'customer', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,type_mismatch,1.0,0.0,0.0,0.08475783475783476,0.0,0.0
+NullExplosionError: column 'amount' is 60% null (limit 20%),null_explosion,1.0,0.0,0.5967117988394585,0.0,0.0,0.0
+RuntimeError: 16 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.015165876777251185,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_id']; found columns ['orderid', 'customer', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Exception: unexpected error in stage 2,type_mismatch,1.0,0.0,0.0,0.18045112781954886,0.0,0.0
+Exception: unexpected error in stage 2,null_explosion,1.0,0.0,0.5083207261724659,0.0,0.0,0.0
+DuplicateKeyError: 21 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.075,0.0
+PipelineError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['order_id', 'amount']; found columns ['order_no', 'customer', 'order_amount', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Exception: column 'amount' has 227 non-numeric values (e.g. 'abc'),type_mismatch,1.0,0.0,0.0,0.20883164673413063,0.0,0.0
+Error: job exited with status 1,null_explosion,1.0,0.0,0.23715415019762845,0.0,0.0,0.0
+DuplicateKeyError: 10 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.011001100110011002,0.0
+"ParserError: Error tokenizing data. C error: Expected 4 fields in line 150, saw 6
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['customer', 'amount']; found columns ['order_id', 'buyer', 'value', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Exception: unexpected error in stage 2,type_mismatch,1.0,0.0,0.0,0.16429699842022116,0.0,0.0
+RuntimeError: column 'customer' is 21% null (limit 20%),null_explosion,1.0,0.0,0.2122229684351914,0.0,0.0,0.0
+ValueError: 20 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.0423728813559322,0.0
+Error: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"ValueError: missing expected columns ['order_id']; found columns ['customer', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+"Exception: column 'amount' has 293 non-numeric values (e.g. '1,2')",type_mismatch,1.0,0.0,0.0,0.2707948243992606,0.0,0.0
+Error: column 'amount' is 46% null (limit 20%),null_explosion,1.0,0.0,0.4623529411764706,0.0,0.0,0.0
+DuplicateKeyError: 31 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.04532163742690058,0.0
+Exception: unexpected error in stage 2,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"ValueError: missing expected columns ['amount', 'order_date']; found columns ['order_id', 'customer', 'total', 'date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: column 'amount' has 63 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.07904642409033877,0.0,0.0
+NullExplosionError: column 'customer' is 34% null (limit 20%),null_explosion,1.0,0.0,0.3381818181818182,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.07480314960629922,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['customer', 'amount']; found columns ['order_id', 'cust', 'total', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: column 'amount' has 13 non-numeric values (e.g. 'n.a.'),type_mismatch,1.0,0.0,0.0,0.014976958525345621,0.0,0.0
+ValueError: column 'customer' is 35% null (limit 20%),null_explosion,1.0,0.0,0.34507042253521125,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.022835394862036156,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Error: missing expected columns ['order_date']; found columns ['order_id', 'customer', 'amount']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 172 non-numeric values (e.g. 'ERR'),type_mismatch,1.0,0.0,0.0,0.23180592991913745,0.0,0.0
+ValueError: column 'amount' is 32% null (limit 20%),null_explosion,1.0,0.0,0.3173758865248227,0.0,0.0,0.0
+DuplicateKeyError: 58 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.08567208271787297,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"PipelineError: missing expected columns ['order_id', 'order_date']; found columns ['order_no', 'customer', 'amount', 'date', 'extra_col']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,type_mismatch,1.0,0.0,0.0,0.24069478908188585,0.0,0.0
+NullExplosionError: column 'amount' is 23% null (limit 20%),null_explosion,1.0,0.0,0.22850844966936076,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.039473684210526314,0.0
+Error: job exited with status 1,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"Error: missing expected columns ['customer', 'order_date']; found columns ['order_id', 'customer_name', 'amount', 'orderdate']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+PipelineError: column 'amount' has 127 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.23302752293577983,0.0,0.0
+Error: column 'customer' is 53% null (limit 20%),null_explosion,1.0,0.0,0.5280095351609059,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,duplicate_keys,1.0,0.0,0.0,0.0,0.015804597701149427,0.0
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Exception: missing expected columns ['customer']; found columns ['order_id', 'CustomerID', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 25 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.12886597938144329,0.0,0.0
+Exception: pipeline execution aborted,null_explosion,1.0,0.0,0.4850474106491612,0.0,0.0,0.0
+Error: job exited with status 1,duplicate_keys,1.0,0.0,0.0,0.0,0.038636363636363635,0.0
+Error: job exited with status 1,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+Exception: unexpected error in stage 2,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 358 non-numeric values (e.g. 'abc'),type_mismatch,1.0,0.0,0.0,0.28144654088050314,0.0,0.0
+Error: column 'amount' is 27% null (limit 20%),null_explosion,1.0,0.0,0.2742504409171076,0.0,0.0,0.0
+Exception: 97 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.08003300330033003,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_id', 'order_date']; found columns ['id', 'customer', 'amount', 'orderdate']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,type_mismatch,1.0,0.0,0.0,0.15452930728241562,0.0,0.0
+NullExplosionError: column 'customer' is 27% null (limit 20%),null_explosion,1.0,0.0,0.2653256704980843,0.0,0.0,0.0
+Exception: pipeline execution aborted,duplicate_keys,1.0,0.0,0.0,0.0,0.020186335403726708,0.0
+Error: job exited with status 1,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"ValueError: missing expected columns ['order_id', 'customer']; found columns ['id', 'customer_name', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Exception: pipeline execution aborted,type_mismatch,1.0,0.0,0.0,0.10544611819235226,0.0,0.0
+RuntimeError: column 'amount' is 38% null (limit 20%),null_explosion,1.0,0.0,0.3775933609958506,0.0,0.0,0.0
+Exception: 49 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.03751914241960184,0.0
+PipelineError: 'utf-8' codec can't decode byte 0xfe in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['customer']; found columns ['order_id', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,type_mismatch,1.0,0.0,0.0,0.031932773109243695,0.0,0.0
+NullExplosionError: column 'amount' is 52% null (limit 20%),null_explosion,1.0,0.0,0.5186615186615187,0.0,0.0,0.0
+DuplicateKeyError: 32 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.02197802197802198,0.0
+Error: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"PipelineError: missing expected columns ['order_id', 'amount']; found columns ['id', 'customer', 'price_usd', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,type_mismatch,1.0,0.0,0.0,0.16833095577746077,0.0,0.0
+NullExplosionError: column 'customer' is 69% null (limit 20%),null_explosion,1.0,0.0,0.6928645294725957,0.0,0.0,0.0
+Exception: pipeline execution aborted,duplicate_keys,1.0,0.0,0.0,0.0,0.03536977491961415,0.0
+Error: job exited with status 1,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['order_date']; found columns ['order_id', 'customer', 'amount']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+PipelineError: column 'amount' has 26 non-numeric values (e.g. 'TBD'),type_mismatch,1.0,0.0,0.0,0.03784570596797671,0.0,0.0
+NullExplosionError: column 'amount' is 29% null (limit 20%),null_explosion,1.0,0.0,0.29484029484029484,0.0,0.0,0.0
+RuntimeError: 49 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.06155778894472362,0.0
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Exception: unexpected error in stage 2,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: column 'amount' has 213 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.16222391469916222,0.0,0.0
+Exception: unexpected error in stage 2,null_explosion,1.0,0.0,0.6149068322981367,0.0,0.0,0.0
+Exception: 28 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.03263403263403263,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+Exception: pipeline execution aborted,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,type_mismatch,1.0,0.0,0.0,0.13687600644122383,0.0,0.0
+Exception: pipeline execution aborted,null_explosion,1.0,0.0,0.5985342019543974,0.0,0.0,0.0
+Error: 53 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.06177156177156177,0.0
+PipelineError: 'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"RuntimeError: missing expected columns ['customer']; found columns ['order_id', 'customer_name', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+PipelineError: column 'amount' has 321 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.27203389830508473,0.0,0.0
+NullExplosionError: column 'customer' is 25% null (limit 20%),null_explosion,1.0,0.0,0.2548755884330868,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.012987012987012988,0.0
+RuntimeError: 'utf-8' codec can't decode byte 0x9f in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Exception: unexpected error in stage 2,type_mismatch,1.0,0.0,0.0,0.06017191977077364,0.0,0.0
+NullExplosionError: column 'customer' is 32% null (limit 20%),null_explosion,1.0,0.0,0.3176470588235294,0.0,0.0,0.0
+DuplicateKeyError: 32 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.06823027718550106,0.0
+ValueError: validation failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['amount']; found columns ['order_id', 'customer', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 42 non-numeric values (e.g. 'ERR'),type_mismatch,1.0,0.0,0.0,0.031746031746031744,0.0,0.0
+Exception: pipeline execution aborted,null_explosion,1.0,0.0,0.5740458015267176,0.0,0.0,0.0
+Error: 55 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.04050073637702504,0.0
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 52 non-numeric values (e.g. '--'),type_mismatch,1.0,0.0,0.0,0.03719599427753934,0.0,0.0
+Error: column 'amount' is 38% null (limit 20%),null_explosion,1.0,0.0,0.3779385171790235,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.011443661971830986,0.0
+ValueError: 'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"PipelineError: missing expected columns ['amount']; found columns ['order_id', 'customer', 'total', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+ValueError: column 'amount' has 12 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.03428571428571429,0.0,0.0
+ValueError: validation failed,null_explosion,1.0,0.0,0.4293085655314757,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.03353658536585366,0.0
+RuntimeError: transform step 'enrich_orders' failed,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_id']; found columns ['id', 'customer', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,type_mismatch,1.0,0.0,0.0,0.26853146853146853,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,null_explosion,1.0,0.0,0.6175213675213675,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.07037037037037037,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf8 in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Error: missing expected columns ['customer', 'order_date']; found columns ['order_id', 'customer_name', 'amount', 'created_at']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+"PipelineError: column 'amount' has 42 non-numeric values (e.g. '1,2')",type_mismatch,1.0,0.0,0.0,0.07304347826086957,0.0,0.0
+Exception: column 'amount' is 27% null (limit 20%),null_explosion,1.0,0.0,0.2714285714285714,0.0,0.0,0.0
+Exception: pipeline execution aborted,duplicate_keys,1.0,0.0,0.0,0.0,0.05181918412348401,0.0
+PipelineError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['customer']; found columns ['order_id', 'cust', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+ValueError: column 'amount' has 42 non-numeric values (e.g. 'n.a.'),type_mismatch,1.0,0.0,0.0,0.04540540540540541,0.0,0.0
+RuntimeError: column 'amount' is 57% null (limit 20%),null_explosion,1.0,0.0,0.565947242206235,0.0,0.0,0.0
+Error: job exited with status 1,duplicate_keys,1.0,0.0,0.0,0.0,0.08943089430894309,0.0
+RuntimeError: transform step 'enrich_orders' failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Exception: pipeline execution aborted,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 8 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.07692307692307693,0.0,0.0
+Exception: pipeline execution aborted,null_explosion,1.0,0.0,0.3493761140819964,0.0,0.0,0.0
+ValueError: validation failed,duplicate_keys,1.0,0.0,0.0,0.0,0.011310084825636193,0.0
+PipelineError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['amount']; found columns ['order_id', 'customer', 'price_usd', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,type_mismatch,1.0,0.0,0.0,0.1593625498007968,0.0,0.0
+NullExplosionError: column 'amount' is 31% null (limit 20%),null_explosion,1.0,0.0,0.3112467306015693,0.0,0.0,0.0
+PipelineError: 3 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.012552301255230125,0.0
+"Exception: Error tokenizing data. C error: Expected 4 fields in line 264, saw 5
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['customer', 'order_date']; found columns ['order_id', 'CustomerID', 'amount', 'date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 11 non-numeric values (e.g. 'ERR'),type_mismatch,1.0,0.0,0.0,0.06358381502890173,0.0,0.0
+ValueError: column 'amount' is 31% null (limit 20%),null_explosion,1.0,0.0,0.3107569721115538,0.0,0.0,0.0
+DuplicateKeyError: 21 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.03143712574850299,0.0
+ValueError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"PipelineError: missing expected columns ['customer', 'amount']; found columns ['order_id', 'CustomerID', 'order_amount', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 22 non-numeric values (e.g. 'ten'),type_mismatch,1.0,0.0,0.0,0.13414634146341464,0.0,0.0
+RuntimeError: task failed after 0 retries,null_explosion,1.0,0.0,0.5990396158463386,0.0,0.0,0.0
+PipelineError: 54 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.05818965517241379,0.0
+Exception: unexpected error in stage 2,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Exception: pipeline execution aborted,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+RuntimeError: column 'amount' has 48 non-numeric values (e.g. 'n.a.'),type_mismatch,1.0,0.0,0.0,0.11594202898550725,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,null_explosion,1.0,0.0,0.6590389016018307,0.0,0.0,0.0
+DuplicateKeyError: 49 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.07515337423312883,0.0
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Error: column 'amount' has 106 non-numeric values (e.g. 'n.a.'),type_mismatch,1.0,0.0,0.0,0.0957542908762421,0.0,0.0
+RuntimeError: task failed after 0 retries,null_explosion,1.0,0.0,0.48138528138528136,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.07816377171215881,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_id']; found columns ['customer', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 26 non-numeric values (e.g. 'TBD'),type_mismatch,1.0,0.0,0.0,0.01736806947227789,0.0,0.0
+NullExplosionError: column 'customer' is 52% null (limit 20%),null_explosion,1.0,0.0,0.5154639175257731,0.0,0.0,0.0
+Exception: 9 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.030821917808219176,0.0
+"Exception: Error tokenizing data. C error: Expected 4 fields in line 73, saw 7
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"RuntimeError: missing expected columns ['customer', 'order_date']; found columns ['order_id', 'client', 'amount', 'orderdate']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 171 non-numeric values (e.g. 'ERR'),type_mismatch,1.0,0.0,0.0,0.29482758620689653,0.0,0.0
+Error: job exited with status 1,null_explosion,1.0,0.0,0.6956521739130435,0.0,0.0,0.0
+Error: job exited with status 1,duplicate_keys,1.0,0.0,0.0,0.0,0.08880550343964978,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"RuntimeError: missing expected columns ['customer']; found columns ['order_id', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Exception: pipeline execution aborted,type_mismatch,1.0,0.0,0.0,0.18439716312056736,0.0,0.0
+NullExplosionError: column 'amount' is 50% null (limit 20%),null_explosion,1.0,0.0,0.5043478260869565,0.0,0.0,0.0
+PipelineError: 22 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.06918238993710692,0.0
+Error: job exited with status 1,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+Exception: unexpected error in stage 2,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,type_mismatch,1.0,0.0,0.0,0.03335980937251787,0.0,0.0
+Error: job exited with status 1,null_explosion,1.0,0.0,0.22317596566523606,0.0,0.0,0.0
+Exception: pipeline execution aborted,duplicate_keys,1.0,0.0,0.0,0.0,0.03826086956521739,0.0
+ValueError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"Exception: missing expected columns ['order_date']; found columns ['order_id', 'customer', 'amount', 'created_at']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Exception: column 'amount' has 33 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.03832752613240418,0.0,0.0
+Exception: pipeline execution aborted,null_explosion,1.0,0.0,0.2365702479338843,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,duplicate_keys,1.0,0.0,0.0,0.0,0.014705882352941176,0.0
+PipelineError: 'utf-8' codec can't decode byte 0xae in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 159 non-numeric values (e.g. 'ten'),type_mismatch,1.0,0.0,0.0,0.16076845298281092,0.0,0.0
+PipelineError: column 'customer' is 63% null (limit 20%),null_explosion,1.0,0.0,0.6314553990610329,0.0,0.0,0.0
+DuplicateKeyError: 23 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.06388888888888888,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+RuntimeError: task failed after 0 retries,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,type_mismatch,1.0,0.0,0.0,0.236,0.0,0.0
+NullExplosionError: column 'amount' is 60% null (limit 20%),null_explosion,1.0,0.0,0.5958702064896755,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.023195876288659795,0.0
+Error: job exited with status 1,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_id', 'amount']; found columns ['id', 'customer', 'order_amount', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+PipelineError: column 'amount' has 17 non-numeric values (e.g. 'ten'),type_mismatch,1.0,0.0,0.0,0.10967741935483871,0.0,0.0
+NullExplosionError: column 'amount' is 49% null (limit 20%),null_explosion,1.0,0.0,0.49019607843137253,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,duplicate_keys,1.0,0.0,0.0,0.0,0.07993966817496229,0.0
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 22 non-numeric values (e.g. 'TBD'),type_mismatch,1.0,0.0,0.0,0.1981981981981982,0.0,0.0
+Error: column 'amount' is 58% null (limit 20%),null_explosion,1.0,0.0,0.5812356979405034,0.0,0.0,0.0
+PipelineError: 15 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.07731958762886598,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"Error: missing expected columns ['order_date']; found columns ['order_id', 'customer', 'amount', 'orderdate', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: column 'amount' has 18 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.020293122886133032,0.0,0.0
+Exception: unexpected error in stage 2,null_explosion,1.0,0.0,0.46677740863787376,0.0,0.0,0.0
+DuplicateKeyError: 103 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.08818493150684932,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd7 in position 0: invalid continuation byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"RuntimeError: missing expected columns ['order_id', 'order_date']; found columns ['id', 'customer', 'amount', 'created_at']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 137 non-numeric values (e.g. '--'),type_mismatch,1.0,0.0,0.0,0.14907508161044614,0.0,0.0
+Exception: pipeline execution aborted,null_explosion,1.0,0.0,0.3305439330543933,0.0,0.0,0.0
+Exception: 7 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.011254019292604502,0.0
+Exception: unexpected error in stage 2,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"ValueError: missing expected columns ['customer', 'order_date']; found columns ['order_id', 'customer_name', 'amount', 'orderdate']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 32 non-numeric values (e.g. 'abc'),type_mismatch,1.0,0.0,0.0,0.0761904761904762,0.0,0.0
+Error: column 'amount' is 40% null (limit 20%),null_explosion,1.0,0.0,0.40189873417721517,0.0,0.0,0.0
+Error: 57 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.057809330628803245,0.0
+"ParserError: Error tokenizing data. C error: Expected 4 fields in line 1290, saw 5
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,type_mismatch,1.0,0.0,0.0,0.05755395683453238,0.0,0.0
+ValueError: validation failed,null_explosion,1.0,0.0,0.33109619686800895,0.0,0.0,0.0
+ValueError: validation failed,duplicate_keys,1.0,0.0,0.0,0.0,0.0786593707250342,0.0
+"Error: Error tokenizing data. C error: Expected 4 fields in line 597, saw 8
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: column 'amount' has 35 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.09259259259259259,0.0,0.0
+Exception: column 'amount' is 44% null (limit 20%),null_explosion,1.0,0.0,0.4376237623762376,0.0,0.0,0.0
+ValueError: 12 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.03986710963455149,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_id', 'amount']; found columns ['order_no', 'customer', 'amt', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,type_mismatch,1.0,0.0,0.0,0.1,0.0,0.0
+NullExplosionError: column 'amount' is 44% null (limit 20%),null_explosion,1.0,0.0,0.4384672070744289,0.0,0.0,0.0
+Exception: pipeline execution aborted,duplicate_keys,1.0,0.0,0.0,0.0,0.06130268199233716,0.0
+Error: job exited with status 1,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+Error: job exited with status 1,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 149 non-numeric values (e.g. '--'),type_mismatch,1.0,0.0,0.0,0.13232682060390763,0.0,0.0
+NullExplosionError: column 'customer' is 23% null (limit 20%),null_explosion,1.0,0.0,0.22792022792022792,0.0,0.0,0.0
+ValueError: 32 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.08888888888888889,0.0
+Exception: 'utf-8' codec can't decode byte 0x8a in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Exception: missing expected columns ['order_id', 'order_date']; found columns ['order_no', 'customer', 'amount', 'created_at']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Exception: column 'amount' has 153 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.22767857142857142,0.0,0.0
+ValueError: validation failed,null_explosion,1.0,0.0,0.336150234741784,0.0,0.0,0.0
+PipelineError: 5 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.008944543828264758,0.0
+RuntimeError: transform step 'enrich_orders' failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,type_mismatch,1.0,0.0,0.0,0.15503875968992248,0.0,0.0
+Error: column 'amount' is 55% null (limit 20%),null_explosion,1.0,0.0,0.5526881720430108,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.08276797829036635,0.0
+ValueError: validation failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Exception: missing expected columns ['customer', 'amount']; found columns ['order_id', 'cust', 'total', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: column 'amount' has 213 non-numeric values (e.g. 'n.a.'),type_mismatch,1.0,0.0,0.0,0.285140562248996,0.0,0.0
+NullExplosionError: column 'amount' is 25% null (limit 20%),null_explosion,1.0,0.0,0.25343811394891946,0.0,0.0,0.0
+DuplicateKeyError: 130 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.08135168961201501,0.0
+ValueError: 'utf-8' codec can't decode byte 0xb5 in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['customer']; found columns ['order_id', 'client', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: column 'amount' has 93 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.16006884681583478,0.0,0.0
+Exception: unexpected error in stage 2,null_explosion,1.0,0.0,0.24177631578947367,0.0,0.0,0.0
+Error: job exited with status 1,duplicate_keys,1.0,0.0,0.0,0.0,0.02967741935483871,0.0
+RuntimeError: transform step 'enrich_orders' failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"PipelineError: missing expected columns ['customer', 'order_date']; found columns ['order_id', 'buyer', 'amount', 'orderdate']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 60 non-numeric values (e.g. 'ten'),type_mismatch,1.0,0.0,0.0,0.058765915768854066,0.0,0.0
+RuntimeError: column 'customer' is 56% null (limit 20%),null_explosion,1.0,0.0,0.5588235294117647,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,duplicate_keys,1.0,0.0,0.0,0.0,0.02893617021276596,0.0
+"ValueError: Error tokenizing data. C error: Expected 4 fields in line 19, saw 8
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"ValueError: missing expected columns ['order_date']; found columns ['order_id', 'customer', 'amount', 'date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Exception: column 'amount' has 294 non-numeric values (e.g. 'n.a.'),type_mismatch,1.0,0.0,0.0,0.2504258943781942,0.0,0.0
+RuntimeError: column 'customer' is 37% null (limit 20%),null_explosion,1.0,0.0,0.370304114490161,0.0,0.0,0.0
+DuplicateKeyError: 49 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.0875,0.0
+ValueError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"RuntimeError: missing expected columns ['customer']; found columns ['order_id', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,type_mismatch,1.0,0.0,0.0,0.2037351443123939,0.0,0.0
+NullExplosionError: column 'customer' is 55% null (limit 20%),null_explosion,1.0,0.0,0.5468164794007491,0.0,0.0,0.0
+DuplicateKeyError: 15 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.06637168141592921,0.0
+"ParserError: Error tokenizing data. C error: Expected 4 fields in line 398, saw 7
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"PipelineError: missing expected columns ['order_id', 'customer']; found columns ['orderid', 'cust', 'amount', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,type_mismatch,1.0,0.0,0.0,0.25411061285500747,0.0,0.0
+RuntimeError: column 'amount' is 57% null (limit 20%),null_explosion,1.0,0.0,0.5660847880299252,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.022727272727272728,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"Error: missing expected columns ['order_id']; found columns ['customer', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 281 non-numeric values (e.g. 'ERR'),type_mismatch,1.0,0.0,0.0,0.23089564502875926,0.0,0.0
+NullExplosionError: column 'customer' is 30% null (limit 20%),null_explosion,1.0,0.0,0.29698375870069604,0.0,0.0,0.0
+DuplicateKeyError: 141 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.08698334361505243,0.0
+Exception: unexpected error in stage 2,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['customer']; found columns ['order_id', 'CustomerID', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Exception: column 'amount' has 83 non-numeric values (e.g. 'ten'),type_mismatch,1.0,0.0,0.0,0.13833333333333334,0.0,0.0
+RuntimeError: column 'amount' is 24% null (limit 20%),null_explosion,1.0,0.0,0.24193548387096775,0.0,0.0,0.0
+RuntimeError: 66 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.0601640838650866,0.0
+RuntimeError: transform step 'enrich_orders' failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Error: missing expected columns ['order_date']; found columns ['order_id', 'customer', 'amount', 'orderdate', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,type_mismatch,1.0,0.0,0.0,0.16517857142857142,0.0,0.0
+Error: column 'amount' is 40% null (limit 20%),null_explosion,1.0,0.0,0.40492170022371365,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,duplicate_keys,1.0,0.0,0.0,0.0,0.024544179523141654,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"ValueError: missing expected columns ['order_id', 'order_date']; found columns ['orderid', 'customer', 'amount', 'orderdate']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,type_mismatch,1.0,0.0,0.0,0.009615384615384616,0.0,0.0
+PipelineError: column 'amount' is 40% null (limit 20%),null_explosion,1.0,0.0,0.3985102420856611,0.0,0.0,0.0
+DuplicateKeyError: 52 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.06333739342265529,0.0
+RuntimeError: transform step 'enrich_orders' failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['amount']; found columns ['order_id', 'customer', 'total', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Exception: column 'amount' has 155 non-numeric values (e.g. 'n.a.'),type_mismatch,1.0,0.0,0.0,0.15048543689320387,0.0,0.0
+NullExplosionError: column 'customer' is 52% null (limit 20%),null_explosion,1.0,0.0,0.5187087307410124,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.08741258741258741,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xac in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Error: column 'amount' has 6 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.029411764705882353,0.0,0.0
+NullExplosionError: column 'amount' is 55% null (limit 20%),null_explosion,1.0,0.0,0.5454545454545454,0.0,0.0,0.0
+Error: 13 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.08496732026143791,0.0
+Exception: pipeline execution aborted,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+ValueError: validation failed,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+"Error: column 'amount' has 217 non-numeric values (e.g. '1,2')",type_mismatch,1.0,0.0,0.0,0.1686091686091686,0.0,0.0
+ValueError: column 'customer' is 31% null (limit 20%),null_explosion,1.0,0.0,0.3125,0.0,0.0,0.0
+Exception: pipeline execution aborted,duplicate_keys,1.0,0.0,0.0,0.0,0.0485207100591716,0.0
+Exception: unexpected error in stage 2,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+RuntimeError: task failed after 0 retries,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 13 non-numeric values (e.g. 'ten'),type_mismatch,1.0,0.0,0.0,0.01849217638691323,0.0,0.0
+NullExplosionError: column 'amount' is 41% null (limit 20%),null_explosion,1.0,0.0,0.4149519890260631,0.0,0.0,0.0
+Exception: 58 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.04927782497875956,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"RuntimeError: missing expected columns ['amount', 'order_date']; found columns ['order_id', 'customer', 'value', 'orderdate', 'extra_col']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Exception: unexpected error in stage 2,type_mismatch,1.0,0.0,0.0,0.21359223300970873,0.0,0.0
+RuntimeError: task failed after 0 retries,null_explosion,1.0,0.0,0.2713068181818182,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,duplicate_keys,1.0,0.0,0.0,0.0,0.06291390728476821,0.0
+RuntimeError: task failed after 0 retries,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Exception: unexpected error in stage 2,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: column 'amount' has 33 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.061567164179104475,0.0,0.0
+NullExplosionError: column 'customer' is 34% null (limit 20%),null_explosion,1.0,0.0,0.3439108061749571,0.0,0.0,0.0
+DuplicateKeyError: 64 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.05565217391304348,0.0
+ValueError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"PipelineError: missing expected columns ['order_id', 'customer']; found columns ['orderid', 'buyer', 'amount', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 38 non-numeric values (e.g. 'n.a.'),type_mismatch,1.0,0.0,0.0,0.03740157480314961,0.0,0.0
+ValueError: column 'amount' is 47% null (limit 20%),null_explosion,1.0,0.0,0.4679144385026738,0.0,0.0,0.0
+DuplicateKeyError: 65 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.04504504504504504,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_id', 'order_date']; found columns ['order_no', 'customer', 'amount', 'date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,type_mismatch,1.0,0.0,0.0,0.10112359550561797,0.0,0.0
+NullExplosionError: column 'customer' is 48% null (limit 20%),null_explosion,1.0,0.0,0.4793233082706767,0.0,0.0,0.0
+DuplicateKeyError: 6 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.011857707509881422,0.0
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Exception: pipeline execution aborted,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,type_mismatch,1.0,0.0,0.0,0.18371040723981902,0.0,0.0
+NullExplosionError: column 'customer' is 38% null (limit 20%),null_explosion,1.0,0.0,0.37943262411347517,0.0,0.0,0.0
+DuplicateKeyError: 37 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.072265625,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+RuntimeError: transform step 'enrich_orders' failed,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 14 non-numeric values (e.g. 'ten'),type_mismatch,1.0,0.0,0.0,0.07526881720430108,0.0,0.0
+RuntimeError: column 'amount' is 60% null (limit 20%),null_explosion,1.0,0.0,0.6031331592689295,0.0,0.0,0.0
+DuplicateKeyError: 27 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.022295623451692816,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa4 in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['customer']; found columns ['order_id', 'customer_name', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,type_mismatch,1.0,0.0,0.0,0.22545168892380205,0.0,0.0
+RuntimeError: task failed after 0 retries,null_explosion,1.0,0.0,0.5316846986089645,0.0,0.0,0.0
+Error: job exited with status 1,duplicate_keys,1.0,0.0,0.0,0.0,0.037267080745341616,0.0
+RuntimeError: 'utf-8' codec can't decode byte 0x8f in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 29 non-numeric values (e.g. '--'),type_mismatch,1.0,0.0,0.0,0.2283464566929134,0.0,0.0
+ValueError: validation failed,null_explosion,1.0,0.0,0.5953815261044176,0.0,0.0,0.0
+RuntimeError: 53 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.03617747440273038,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9f in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"ValueError: missing expected columns ['order_id']; found columns ['id', 'customer', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+PipelineError: column 'amount' has 105 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.11217948717948718,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,null_explosion,1.0,0.0,0.42670401493930904,0.0,0.0,0.0
+RuntimeError: 84 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.07954545454545454,0.0
+"Exception: Error tokenizing data. C error: Expected 4 fields in line 1013, saw 6
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['order_id', 'amount']; found columns ['orderid', 'customer', 'price_usd', 'order_date', 'extra_col']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 368 non-numeric values (e.g. 'TBD'),type_mismatch,1.0,0.0,0.0,0.2634216177523264,0.0,0.0
+ValueError: validation failed,null_explosion,1.0,0.0,0.5797373358348968,0.0,0.0,0.0
+DuplicateKeyError: 36 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.02737642585551331,0.0
+ValueError: validation failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 215 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.20456707897240722,0.0,0.0
+NullExplosionError: column 'amount' is 68% null (limit 20%),null_explosion,1.0,0.0,0.6844660194174758,0.0,0.0,0.0
+DuplicateKeyError: 64 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.04758364312267658,0.0
+RuntimeError: task failed after 0 retries,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_date']; found columns ['order_id', 'customer', 'amount']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,type_mismatch,1.0,0.0,0.0,0.17980295566502463,0.0,0.0
+RuntimeError: column 'customer' is 60% null (limit 20%),null_explosion,1.0,0.0,0.6009463722397477,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.02621359223300971,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"RuntimeError: missing expected columns ['customer']; found columns ['order_id', 'customer_name', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Exception: unexpected error in stage 2,type_mismatch,1.0,0.0,0.0,0.10603588907014681,0.0,0.0
+ValueError: column 'customer' is 31% null (limit 20%),null_explosion,1.0,0.0,0.3139963167587477,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,duplicate_keys,1.0,0.0,0.0,0.0,0.019267822736030827,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+RuntimeError: task failed after 0 retries,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: column 'amount' has 120 non-numeric values (e.g. 'n.a.'),type_mismatch,1.0,0.0,0.0,0.21978021978021978,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,null_explosion,1.0,0.0,0.3501006036217304,0.0,0.0,0.0
+Error: job exited with status 1,duplicate_keys,1.0,0.0,0.0,0.0,0.0835214446952596,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['customer', 'order_date']; found columns ['order_id', 'client', 'amount', 'orderdate']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 169 non-numeric values (e.g. '--'),type_mismatch,1.0,0.0,0.0,0.20864197530864198,0.0,0.0
+NullExplosionError: column 'amount' is 47% null (limit 20%),null_explosion,1.0,0.0,0.47368421052631576,0.0,0.0,0.0
+DuplicateKeyError: 24 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.03732503888024884,0.0
+RuntimeError: task failed after 0 retries,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['amount']; found columns ['order_id', 'customer', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 126 non-numeric values (e.g. 'ERR'),type_mismatch,1.0,0.0,0.0,0.27876106194690264,0.0,0.0
+NullExplosionError: column 'customer' is 27% null (limit 20%),null_explosion,1.0,0.0,0.2668621700879765,0.0,0.0,0.0
+ValueError: 6 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.02054794520547945,0.0
+"ParserError: Error tokenizing data. C error: Expected 4 fields in line 847, saw 5
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['amount']; found columns ['order_id', 'customer', 'total', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+PipelineError: column 'amount' has 262 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.2769556025369979,0.0,0.0
+Exception: unexpected error in stage 2,null_explosion,1.0,0.0,0.31447963800904977,0.0,0.0,0.0
+DuplicateKeyError: 25 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.035868005738880916,0.0
+Exception: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+ValueError: validation failed,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,type_mismatch,1.0,0.0,0.0,0.17101827676240208,0.0,0.0
+Error: job exited with status 1,null_explosion,1.0,0.0,0.5378151260504201,0.0,0.0,0.0
+DuplicateKeyError: 61 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.0613682092555332,0.0
+RuntimeError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"ValueError: missing expected columns ['customer', 'order_date']; found columns ['order_id', 'client', 'amount', 'created_at']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+"TypeMismatchError: column 'amount' has 119 non-numeric values (e.g. '1,2')",type_mismatch,1.0,0.0,0.0,0.1794871794871795,0.0,0.0
+NullExplosionError: column 'customer' is 48% null (limit 20%),null_explosion,1.0,0.0,0.47989276139410186,0.0,0.0,0.0
+DuplicateKeyError: 15 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.03177966101694915,0.0
+Exception: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+ValueError: validation failed,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Exception: column 'amount' has 218 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.18061309030654515,0.0,0.0
+NullExplosionError: column 'customer' is 64% null (limit 20%),null_explosion,1.0,0.0,0.6439828080229226,0.0,0.0,0.0
+PipelineError: 16 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.013114754098360656,0.0
+ValueError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+Exception: pipeline execution aborted,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 30 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.26548672566371684,0.0,0.0
+NullExplosionError: column 'amount' is 39% null (limit 20%),null_explosion,1.0,0.0,0.3900709219858156,0.0,0.0,0.0
+Error: job exited with status 1,duplicate_keys,1.0,0.0,0.0,0.0,0.02437106918238994,0.0
+ValueError: validation failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Exception: column 'amount' has 34 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.04392764857881137,0.0,0.0
+ValueError: validation failed,null_explosion,1.0,0.0,0.6583522297808012,0.0,0.0,0.0
+DuplicateKeyError: 78 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.05357142857142857,0.0
+Exception: 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"RuntimeError: missing expected columns ['order_id']; found columns ['customer', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: column 'amount' has 86 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.07107438016528926,0.0,0.0
+Error: job exited with status 1,null_explosion,1.0,0.0,0.5131578947368421,0.0,0.0,0.0
+DuplicateKeyError: 25 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.08389261744966443,0.0
+"RuntimeError: Error tokenizing data. C error: Expected 4 fields in line 154, saw 9
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['customer', 'order_date']; found columns ['order_id', 'customer_name', 'amount', 'orderdate']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 66 non-numeric values (e.g. '--'),type_mismatch,1.0,0.0,0.0,0.048,0.0,0.0
+NullExplosionError: column 'customer' is 36% null (limit 20%),null_explosion,1.0,0.0,0.3595166163141994,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,duplicate_keys,1.0,0.0,0.0,0.0,0.08313253012048193,0.0
+"RuntimeError: Error tokenizing data. C error: Expected 4 fields in line 497, saw 9
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,type_mismatch,1.0,0.0,0.0,0.10846343467543139,0.0,0.0
+ValueError: validation failed,null_explosion,1.0,0.0,0.435933147632312,0.0,0.0,0.0
+Exception: 5 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.046296296296296294,0.0
+Error: 'utf-8' codec can't decode byte 0xee in position 0: invalid continuation byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,type_mismatch,1.0,0.0,0.0,0.1423444976076555,0.0,0.0
+Error: column 'customer' is 67% null (limit 20%),null_explosion,1.0,0.0,0.6685483870967742,0.0,0.0,0.0
+DuplicateKeyError: 36 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.04240282685512368,0.0
+RuntimeError: task failed after 0 retries,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Error: missing expected columns ['order_id']; found columns ['customer', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 273 non-numeric values (e.g. 'n.a.'),type_mismatch,1.0,0.0,0.0,0.24705882352941178,0.0,0.0
+Error: job exited with status 1,null_explosion,1.0,0.0,0.6868770764119602,0.0,0.0,0.0
+DuplicateKeyError: 11 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.015714285714285715,0.0
+ValueError: validation failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['customer']; found columns ['order_id', 'customer_name', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+ValueError: validation failed,type_mismatch,1.0,0.0,0.0,0.05390334572490706,0.0,0.0
+Exception: unexpected error in stage 2,null_explosion,1.0,0.0,0.3169761273209549,0.0,0.0,0.0
+DuplicateKeyError: 43 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.045263157894736845,0.0
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Error: missing expected columns ['amount', 'order_date']; found columns ['order_id', 'customer', 'order_amount', 'created_at', 'extra_col']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 160 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.1360544217687075,0.0,0.0
+Exception: pipeline execution aborted,null_explosion,1.0,0.0,0.639261744966443,0.0,0.0,0.0
+ValueError: validation failed,duplicate_keys,1.0,0.0,0.0,0.0,0.02973977695167286,0.0
+Error: job exited with status 1,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Exception: missing expected columns ['order_id', 'customer']; found columns ['id', 'client', 'amount', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,type_mismatch,1.0,0.0,0.0,0.10569105691056911,0.0,0.0
+Exception: pipeline execution aborted,null_explosion,1.0,0.0,0.42625169147496617,0.0,0.0,0.0
+DuplicateKeyError: 10 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.045871559633027525,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Error: missing expected columns ['order_id', 'customer']; found columns ['orderid', 'buyer', 'amount', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 36 non-numeric values (e.g. 'TBD'),type_mismatch,1.0,0.0,0.0,0.2482758620689655,0.0,0.0
+NullExplosionError: column 'amount' is 49% null (limit 20%),null_explosion,1.0,0.0,0.4885844748858447,0.0,0.0,0.0
+Exception: 62 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.08720112517580872,0.0
+RuntimeError: transform step 'enrich_orders' failed,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_date']; found columns ['order_id', 'customer', 'amount', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+"Exception: column 'amount' has 44 non-numeric values (e.g. '1,2')",type_mismatch,1.0,0.0,0.0,0.03514376996805112,0.0,0.0
+RuntimeError: task failed after 0 retries,null_explosion,1.0,0.0,0.583554376657825,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,duplicate_keys,1.0,0.0,0.0,0.0,0.03812549642573471,0.0
+ValueError: validation failed,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_id', 'amount']; found columns ['orderid', 'customer', 'amt', 'order_date', 'extra_col']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+ValueError: column 'amount' has 7 non-numeric values (e.g. 'TBD'),type_mismatch,1.0,0.0,0.0,0.021875,0.0,0.0
+Exception: column 'amount' is 45% null (limit 20%),null_explosion,1.0,0.0,0.4525968672712284,0.0,0.0,0.0
+Error: job exited with status 1,duplicate_keys,1.0,0.0,0.0,0.0,0.02753623188405797,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x98 in position 2: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,type_mismatch,1.0,0.0,0.0,0.11872791519434629,0.0,0.0
+RuntimeError: task failed after 0 retries,null_explosion,1.0,0.0,0.6956521739130435,0.0,0.0,0.0
+Exception: unexpected error in stage 2,duplicate_keys,1.0,0.0,0.0,0.0,0.019704433497536946,0.0
+"ParserError: Error tokenizing data. C error: Expected 4 fields in line 375, saw 8
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['amount']; found columns ['order_id', 'customer', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+RuntimeError: column 'amount' has 52 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.08441558441558442,0.0,0.0
+PipelineError: column 'amount' is 39% null (limit 20%),null_explosion,1.0,0.0,0.39211136890951276,0.0,0.0,0.0
+DuplicateKeyError: 14 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.011986301369863013,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe8 in position 3: invalid continuation byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Error: column 'amount' has 74 non-numeric values (e.g. 'ERR'),type_mismatch,1.0,0.0,0.0,0.11094452773613193,0.0,0.0
+RuntimeError: column 'amount' is 24% null (limit 20%),null_explosion,1.0,0.0,0.24118476727785615,0.0,0.0,0.0
+RuntimeError: 34 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.058419243986254296,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Error: missing expected columns ['amount']; found columns ['order_id', 'customer', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,type_mismatch,1.0,0.0,0.0,0.05824175824175824,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,null_explosion,1.0,0.0,0.30672645739910315,0.0,0.0,0.0
+Error: job exited with status 1,duplicate_keys,1.0,0.0,0.0,0.0,0.08412483039348712,0.0
+RuntimeError: task failed after 0 retries,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"RuntimeError: missing expected columns ['customer']; found columns ['order_id', 'client', 'amount', 'order_date']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 123 non-numeric values (e.g. 'ten'),type_mismatch,1.0,0.0,0.0,0.16576819407008087,0.0,0.0
+Exception: unexpected error in stage 2,null_explosion,1.0,0.0,0.5042105263157894,0.0,0.0,0.0
+DuplicateKeyError: 14 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.013631937682570594,0.0
+Error: [Errno 2] No such file or directory: '/tmp/tmpxxmt_4u4/in.csv',runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+RuntimeError: task failed after 0 retries,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: column 'amount' has 14 non-numeric values (e.g. 'ERR'),type_mismatch,1.0,0.0,0.0,0.06481481481481481,0.0,0.0
+Error: column 'customer' is 48% null (limit 20%),null_explosion,1.0,0.0,0.4775888717156105,0.0,0.0,0.0
+DuplicateKeyError: 38 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.0448642266824085,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x95 in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+RuntimeError: transform step 'enrich_orders' failed,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 40 non-numeric values (e.g. 'abc'),type_mismatch,1.0,0.0,0.0,0.05263157894736842,0.0,0.0
+RuntimeError: task failed after 0 retries,null_explosion,1.0,0.0,0.5164233576642335,0.0,0.0,0.0
+ValueError: 24 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.038834951456310676,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+ValueError: validation failed,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,type_mismatch,1.0,0.0,0.0,0.14953271028037382,0.0,0.0
+NullExplosionError: column 'amount' is 56% null (limit 20%),null_explosion,1.0,0.0,0.5630081300813008,0.0,0.0,0.0
+DuplicateKeyError: 7 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.025547445255474453,0.0
+Error: 'utf-8' codec can't decode byte 0x8c in position 0: invalid start byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+Exception: unexpected error in stage 2,schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+"Exception: column 'amount' has 388 non-numeric values (e.g. '1,2')",type_mismatch,1.0,0.0,0.0,0.27038327526132405,0.0,0.0
+Error: column 'amount' is 46% null (limit 20%),null_explosion,1.0,0.0,0.46194225721784776,0.0,0.0,0.0
+ValueError: 90 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.06574141709276844,0.0
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc7 in position 0: invalid continuation byte,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"ValueError: missing expected columns ['order_date']; found columns ['order_id', 'customer', 'amount']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+Exception: column 'amount' has 89 non-numeric values (e.g. '--'),type_mismatch,1.0,0.0,0.0,0.20273348519362186,0.0,0.0
+Exception: column 'customer' is 69% null (limit 20%),null_explosion,1.0,0.0,0.6927122464312547,0.0,0.0,0.0
+DuplicateKeyError: 102 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.065848934796643,0.0
+"ParserError: Error tokenizing data. C error: Expected 4 fields in line 851, saw 7
+",runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"SchemaMismatchError: missing expected columns ['customer']; found columns ['order_id', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+ValueError: column 'amount' has 37 non-numeric values (e.g. 'twelve'),type_mismatch,1.0,0.0,0.0,0.04214123006833713,0.0,0.0
+NullExplosionError: column 'customer' is 66% null (limit 20%),null_explosion,1.0,0.0,0.6598984771573604,0.0,0.0,0.0
+Error: job exited with status 1,duplicate_keys,1.0,0.0,0.0,0.0,0.016012810248198558,0.0
+EmptyDataError: No columns to parse from file,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"ValueError: missing expected columns ['order_id', 'customer']; found columns ['id', 'cust', 'amount', 'order_date']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+Error: job exited with status 1,type_mismatch,1.0,0.0,0.0,0.11338289962825279,0.0,0.0
+RuntimeError: column 'amount' is 57% null (limit 20%),null_explosion,1.0,0.0,0.5669710806697108,0.0,0.0,0.0
+PipelineError: 76 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.051771117166212535,0.0
+Error: job exited with status 1,runtime_error,0.0,0.0,0.0,0.0,0.0,1.0
+"SchemaMismatchError: missing expected columns ['order_id', 'order_date']; found columns ['id', 'customer', 'amount', 'date', 'extra_col']",schema_mismatch,1.0,2.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 84 non-numeric values (e.g. '$45.50'),type_mismatch,1.0,0.0,0.0,0.1492007104795737,0.0,0.0
+NullExplosionError: column 'amount' is 57% null (limit 20%),null_explosion,1.0,0.0,0.566990291262136,0.0,0.0,0.0
+Exception: 3 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.02459016393442623,0.0
+ValueError: validation failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0
+"Error: missing expected columns ['customer']; found columns ['order_id', 'amount', 'order_date', 'extra_col']",schema_mismatch,1.0,1.0,0.0,0.0,0.0,0.0
+TypeMismatchError: column 'amount' has 36 non-numeric values (e.g. 'ERR'),type_mismatch,1.0,0.0,0.0,0.15384615384615385,0.0,0.0
+PipelineError: column 'customer' is 60% null (limit 20%),null_explosion,1.0,0.0,0.6012006861063465,0.0,0.0,0.0
+ValueError: 26 duplicate values in primary key 'order_id',duplicate_keys,1.0,0.0,0.0,0.0,0.03556771545827633,0.0
+RuntimeError: transform step 'enrich_orders' failed,runtime_error,0.0,0.0,0.0,0.0,0.0,0.0

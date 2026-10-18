@@ -1,0 +1,103 @@
+{
+  "n_samples": 600,
+  "class_counts": {
+    "schema_mismatch": 120,
+    "type_mismatch": 120,
+    "null_explosion": 120,
+    "duplicate_keys": 120,
+    "runtime_error": 120
+  },
+  "test_accuracy": 1.0,
+  "test_macro_f1": 1.0,
+  "cv5_accuracy": 1.0,
+  "text_only_accuracy": 0.7467,
+  "labels": [
+    "duplicate_keys",
+    "null_explosion",
+    "runtime_error",
+    "schema_mismatch",
+    "type_mismatch"
+  ],
+  "confusion_matrix": [
+    [
+      30,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      30,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      30,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      30,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      30
+    ]
+  ],
+  "per_class": {
+    "duplicate_keys": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "null_explosion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "runtime_error": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "schema_mismatch": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "type_mismatch": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 150.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 150.0
+    }
+  }
+}

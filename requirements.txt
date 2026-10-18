@@ -1,0 +1,7 @@
+pandas
+scikit-learn
+joblib
+# No extra dependency is needed for the optional IBM Granite integration:
+# fixer.py talks to any OpenAI-compatible local server (e.g. llama-server)
+# using only the Python standard library (urllib).
+# Optional accelerator (not installed by default): snapml
