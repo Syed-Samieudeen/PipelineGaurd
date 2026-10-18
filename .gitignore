@@ -1,8 +1,11 @@
-﻿__pycache__/
+﻿```gitignore
+__pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
 venv/
+
+# Environment files and secrets
 .env
 .env.*
 !.env.example
@@ -12,10 +15,12 @@ venv/
 id_rsa
 id_ed25519
 
-# Generated run artifacts and operational logs
+# Generated runtime artifacts and logs
 runs/
 logs/*.jsonl
+data/backup/
+data/pending/
 
-# Local Python and test artifacts
-__pycache__/
-.pytest_cache/
+# Generated incident reports
+reports/incident_*.md
+```
